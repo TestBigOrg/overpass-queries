@@ -3,11 +3,10 @@
 
 (
   
-  node["type"="restriction"](changed:%(timeStart)s,%(timeFinish)s)(poly:%(bbox)s);
-  way["type"="restriction"](changed:%(timeStart)s,%(timeFinish)s)(poly:%(bbox)s);
-  relation["type"="restriction"](changed:%(timeStart)s,%(timeFinish)s)(poly:%(bbox)s);
+  node["type"="restriction"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
+  way["type"="restriction"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
+  relation["type"="restriction"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
 );
-
-out body;
+out meta;
 >;
-out skel qt;
+out meta qt;
