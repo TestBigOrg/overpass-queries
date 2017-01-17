@@ -17,15 +17,15 @@
   way["landuse"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
   
   //Buildings, offices and house names
-  way["building"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
-  relation["building"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
+  way["building"]["name"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
+  relation["building"]["name"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
   node["office"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
   way["office"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
   node["addr:housename"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
   way["addr:housename"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
   
   // Transport and Infrastructure
-  node["highway"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
+  node["highway"]["name"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
   node["railway"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
   node["public_transport"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
   node["public_transport"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
