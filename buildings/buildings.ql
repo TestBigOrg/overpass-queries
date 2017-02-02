@@ -1,5 +1,5 @@
 
-[out:json][timeout:600];
+[out:json][timeout:3600];
 
 (
 
