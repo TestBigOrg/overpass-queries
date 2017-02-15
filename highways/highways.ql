@@ -3,7 +3,7 @@
 
 (
 
-  way["highway"="traffic_signals"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
+  way["highway"](changed:"%(timeStart)s","%(timeFinish)s")(poly:"%(bbox)s");
 
 );
 out meta;
